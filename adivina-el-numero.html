@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Number guessing game</title>
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+        background: lightblue;
+      }
+      
+      .form input[type="number"] {
+        width: 200px;
+      }
+
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Juego adivina el número
+    </h1>
+
+    <p>Hemos seleccionado un número aleatorio entre 1 y 100. Fíjate si lo puedes adivinar en 10 turnos o menos. Vamos a decirte si tu número es más alto o más bajo.
+
+    <div class="tablero">
+      <label for="numeroJugador">Adivina el numero: </label>
+      <input type="number" min="1" max="100" required id="guessField" class="guessField">
+      <input type="submit" value="Enviar respuesta" class="guessSubmit">
+    </div>
+
+    <div class="respuestas">
+      <p class="adivino"></p>
+      <p class="ultimoNumero"></p>
+      <p class="altoBajo"></p>
+    </div>
+
+    <script src="./adivina.js">
+        
+    </script>
+  </body>
+</html>
