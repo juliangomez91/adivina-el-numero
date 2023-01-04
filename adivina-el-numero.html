@@ -26,14 +26,36 @@
         color: white;
         padding: 3px;
       }
+
+      @media (max-width: 600px) {
+      .parrafo{
+       width: 65%;
+       text-align: center;
+       margin-left: 45px;
+      }
+      .guessSubmit{
+        display: flex;
+        position: absolute;
+        margin-left: 45px;
+      }
+      }   
+      h1{
+      width: 65%;
+      margin-left: 75px;
+      }
+      .tablero{
+      margin-left: 45px;}
+  
     </style>
   </head>
 
   <body>
     <h1>Juego adivina el número
     </h1>
-
+  <div class="parrafo">
     <p>Hemos seleccionado un número aleatorio entre 1 y 100. Fíjate si lo puedes adivinar en 10 turnos o menos. Vamos a decirte si tu número es más alto o más bajo.
+  </div>
+    
 
     <div class="tablero">
       <label for="numeroJugador">Adivina el numero: </label>
