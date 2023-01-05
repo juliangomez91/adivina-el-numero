@@ -25,7 +25,7 @@ if (numeroUsuario === randomNumber){
     ultimoNumero.style.backgroundColor ='green';
     altoBajo.textContent = ' ';
     setGameOver();
-}  else if(contador === 10){
+}  else if(contador === 6){
     ultimoNumero.textContent ='¡¡¡ FIN DEL JUEGO!!!';
     altoBajo.textContent ='';
     setGameOver();
